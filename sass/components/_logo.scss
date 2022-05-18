@@ -6,10 +6,15 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--accent-color);
+
   &-dark {
     color: var(--main-color);
   }
+
   &-light {
     color: var(--white-color-text);
   }
+}
+.logo-footer {
+  margin-bottom: 20px;
 }

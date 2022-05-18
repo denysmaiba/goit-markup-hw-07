@@ -7,9 +7,6 @@
 .address-block {
   flex-grow: 1;
 }
-.container .logo-footer {
-  margin-bottom: 20px;
-}
 
 .adres-item:not(:last-child) {
   margin-bottom: 9px;
@@ -23,6 +20,7 @@
   letter-spacing: 0.03em;
 
   color: var(--white-color-text);
+
   &-contacts {
     font-style: normal;
     font-size: 14px;
@@ -37,53 +35,51 @@
   display: flex;
   align-items: baseline;
 }
+.soc-block-list {
+  display: flex;
+}
 
 .soc-block {
   margin: 0;
   margin-left: 70px;
   width: 206px;
   height: 80px;
-  .link {
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.1);
-
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
-      background-color: var(--accent-color);
-    }
-    &-item + &-item {
-      margin-left: 10px;
-    }
-  }
-
-  .title {
-    margin: 0;
-    margin-bottom: 20px;
-
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--white-color-text);
-  }
-  &-list {
-    display: flex;
-  }
-  &-icons {
-    width: 20px;
-    height: 20px;
-    fill: var(--white-color-text);
-  }
 }
 .soc-block-item + .soc-block-item {
   margin-left: 10px;
+}
+.soc-block .link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.soc-block .title {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color-text);
+}
+
+.soc-block-icons {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-color-text);
 }

@@ -1,45 +1,88 @@
 .team {
   background-color: var(--bacground-team);
-  &-caption {
-    margin-bottom: 50px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-  }
-  &-list {
-    display: flex;
-    text-align: center;
-  }
-  &-item {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-    background: #ffffff;
-    border-radius: 0px 0px 4px 4px;
-    width: 270px;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
-  }
-  &-title {
-    margin-bottom: 10px;
-
-    font-size: 16px;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-  }
-  &-text {
-    margin-bottom: 16px;
-
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: var(--text-color);
-  }
 }
 
+.team-caption {
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+.team-list {
+  display: flex;
+  text-align: center;
+}
+.team-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  width: 270px;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.team-title {
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+}
+.team-text {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
 .shelf {
   padding: 30px;
 }
 /*------------ Social-links -----------*/
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+}
+.social-links .link {
+  width: 44px;
+  height: 44px;
+
+  color: var(--social-links-color);
+  background-color: var(--white-color);
+
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: background-color var(--timing);
+}
+.social-links .link:hover,
+.social-links .link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-item + .social-item {
+  margin-left: 10px;
+}
+
+.social-icons {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-links-color);
+  transition: fill var(--timing);
+}
+
+.social-links .link:hover .social-icons,
+.social-links .link:focus .social-icons {
+  fill: #ffffff;
+}
