@@ -1,0 +1,40 @@
+.features {
+  display: flex;
+  &-item {
+    width: 270px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &-icon {
+    width: 70px;
+    height: 70px;
+  }
+  &-title {
+    margin-bottom: 10px;
+
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+  &-text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+  }
+}
+
+.icons {
+  display: inline-flex;
+  margin-bottom: 30px;
+
+  width: 270px;
+  height: 120px;
+
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bacground-button);
+  border-radius: 4px;
+}
