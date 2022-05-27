@@ -1,19 +1,7 @@
-.section-work {
-  padding-top: 0;
-}
-
-.section-caption {
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
-
 .work {
   display: flex;
 }
-.work-item {
+.work__item {
   position: relative;
   width: 370;
   &:not(:first-child) {
@@ -21,7 +9,7 @@
   }
 }
 
-.work-text {
+.work__text {
   display: flex;
   position: absolute;
   width: 100%;
